@@ -1,0 +1,93 @@
+Project Specification: Aim Service Web Platform (Phase 2)
+1. Project Overview
+Objective: Expand the current "Chatbox & Shopify Redirection" MVP into a full-featured web application. The current Chatbox will serve as a specific module within this new ecosystem. Aesthetic: The visual identity must remain consistent with the existing dark, space-themed design (nebula background, neon cyan/purple accents, glassy UI elements).
+
+2. Global UI/UX Structure
+Background: The existing "starry night/nebula" background must be applied globally across all new pages to ensure brand consistency.
+
+Navigation Bar (New Feature):
+
+Position: Fixed at the top-center of the screen.
+
+Style: Minimalist, transparent or glass-morphism effect.
+
+Menu Items:
+
+Home
+
+Coaching
+
+Our Staff
+
+Playlists
+
+3. Feature Breakdown
+A. Home Page (Anasayfa)
+Purpose: The landing page to hook users and explain the value of the aim coaching service.
+
+Key Elements:
+
+Hero Section: High-impact text and visuals describing the service (e.g., "Elevate Your Aim," "Professional Coaching").
+
+Visuals: sleek, high-quality graphics compatible with the dark theme.
+
+Call to Action: Buttons or links guiding users to the "Coaching" section.
+
+B. Coaching Page (Koçluk)
+Purpose: The bridge between the user and the service providers.
+
+Layout: A grid displaying 4 distinct Coach Slots.
+
+Card Structure (Per Coach):
+
+Coach Name & Avatar.
+
+Short tagline or specialization (e.g., "Tracking Specialist").
+
+Action Button: "Contact" (İletişime Geç).
+
+Integration Logic:
+
+When the "Contact" button is clicked, the current page content should be replaced (or an overlay opened) displaying the Chatbox Interface (the existing project).
+
+Note: The system should ideally recognize which coach was clicked so the chat context is relevant to that specific coach.
+
+C. Our Staff Page (Kadromuz)
+Purpose: To showcase the wider team behind the organization.
+
+Layout: A responsive grid displaying 10 slots (initially).
+
+Card Structure:
+
+Profile Picture.
+
+Name.
+
+Role/Title: Specific badges displaying roles such as:
+
+Tweaker
+
+Coach
+
+Pro Player
+
+Community Manager
+
+Admin/Scalability Requirement:
+
+The data for this section (Names, Images, Titles) must be structured (e.g., in a JSON file or database) so that an admin can easily:
+
+Add or remove team members (increase/decrease from 10 slots).
+
+Assign or create custom titles without editing HTML code directly.
+
+D. Playlists Page
+Purpose: External Resource redirection.
+
+Behavior:
+
+This is not a physical page within the website.
+
+Clicking "Playlists" in the navigation bar immediately redirects the user to https://evxl.app/.
+
+Implementation: <a href="https://evxl.app/" target="_blank"> logic.
